@@ -30,7 +30,7 @@ function FormCard({ movieId }: Props) {
         const score = (event.target as any).score.value;
 
         if (!validateEmail(email)){
-            return (alert('O email não é valido!'));
+            return;
         }
 
         const config: AxiosRequestConfig = {
